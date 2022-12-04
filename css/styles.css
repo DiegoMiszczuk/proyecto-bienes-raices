@@ -62,6 +62,11 @@ display: block;
 .boton-verde{
 background-color: #71b111;
 }
+.boton-contactanos{
+display: inline-block;
+background-color: #E08709;
+}
+
 /* header */
 .site-header.inicio {
   background-image: url(../img/header.jpg);
@@ -98,6 +103,9 @@ background-color: #71b111;
 }
 .navegacion a:last-of-type {
   margin: 0;
+}
+.navegacion a:hover{
+  color: #71b111;
 }
 
 /* iconos nosotros */
@@ -138,12 +146,107 @@ background-color: #71b111;
   color: #71b111;
   font-weight: 700;
 }
+.iconos-caracteristicas{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+  /* flex: 1; */
+  display: flex;
+  padding-top: 2rem;
+}
+.iconos-caracteristicas li img{
+  margin-right: 2rem;
+}
 .ver-todas{
   display: flex;
   justify-content: flex-end;
 }
+
+/* Contacto home */
 .imagen-contacto{
   background-image: url(../img/encuentra.jpg);
   background-position: center center;
   height: 40rem;
+  display: flex;
+  align-items: center;
+}
+.contenido-contacto{
+  flex: 1;
+  color: #ffffff;
+}
+.contenido-contacto p{
+  font-size: 1.8rem;
+}
+/* Sección inferior */
+.seccion-inferior{
+  display: flex;
+  justify-content: space-between;
+}
+.seccion-inferior .blog{
+flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+flex-basis: calc(40% - 2rem);
+}
+.entrada-blog{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+ margin-bottom: 0;
+}
+.entrada-blog .imagen{
+flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+flex-basis: calc(60% - 3rem);
+}
+.texto-entrada a{
+  color: #000000;
+  text-decoration: none;
+}
+.texto-entrada h4{
+  margin: 0;
+  line-height: 1.2;
+}
+.texto-entrada h4::after{
+  content: "";
+  display: block;
+  width: 15rem;
+  height: .5rem;
+  background-color: #71b111;
+}
+.texto-entrada p{
+  padding-top: 1.6rem;
+}
+.testimonial{
+  background-color:#71b111;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: white;
+  border-radius: 2rem;
+}
+.testimonial p{
+  text-align: right;
+}
+.testimonial blockquote::before{
+  content: "";
+  background-image:url(../img/comilla.svg);
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+.testimonial blockquote{
+  position: relative;
+  padding-left: 5rem;
+ font-weight: 300;
+}
+.blog h3{
+  padding-bottom: 2rem  ;
 }
